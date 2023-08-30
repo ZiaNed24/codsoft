@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	<style>
+	
+		*{margin: 0;padding: 0;}
+		.main
+		{
+			width: 305px;
+			height: 415px;
+			text-align: center;
+			margin: auto;
+			margin-top: 20px;
+			background-color: grey;
+		}
+		
+		.btn
+		{
+			width: 60px;
+			height: 60px;
+			font-size: 20px;
+			margin: 5px;
+			background: yellow;
+			border-radius: 30px;
+			border: none;
+		}
+		
+		.text
+		{
+			width: 270px;
+			height: 40px;
+			font-size: 22px;
+			background: green;
+		}
+		
+		.clr
+		{
+			width: 273px;
+			height: 40px;
+			font-size: 22px;
+			margin-top: 5px;
+			background: red;
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+	
+ <div class="main">	
+	 
+	<h1>Calculator</h1>
+	 
+	<form name="formCal">
+	
+		<input class="text" type="text" placeholder="0" name="ans">
+		<br>
+		
+		<input class="btn" type="button" value="9" onClick="formCal.ans.value+='9'">
+		<input class="btn" type="button" value="8" onClick="formCal.ans.value+='8'">
+		<input class="btn" type="button" value="7" onClick="formCal.ans.value+='7'">
+		<input class="btn" type="button" value="+" onClick="formCal.ans.value+='+'">
+		
+		<br>
+		
+		<input class="btn" type="button" value="6" onClick="formCal.ans.value+='6'">
+		<input class="btn" type="button" value="5" onClick="formCal.ans.value+='5'">
+		<input class="btn" type="button" value="4" onClick="formCal.ans.value+='4'">
+		<input class="btn" type="button" value="-" onClick="formCal.ans.value+='-'">
+		
+		<br>
+		
+		<input class="btn" type="button" value="3" onClick="formCal.ans.value+='3'">
+		<input class="btn" type="button" value="2" onClick="formCal.ans.value+='2'">
+		<input class="btn" type="button" value="1" onClick="formCal.ans.value+='1'">
+		<input class="btn" type="button" value="x" onClick="formCal.ans.value+='*'">
+		
+		<br>
+		
+		<input class="btn" type="button" value="0" onClick="formCal.ans.value+='0'">
+		<input class="btn" type="button" value="." onClick="formCal.ans.value+='.'">
+		<input class="btn" type="button" value="=" onClick="formCal.ans.value = eval(formCal.ans.value)  ">
+		<input class="btn" type="button" value="/" onClick="formCal.ans.value+='/'">
+		<br>
+		<input type="button" class="clr" value="Clear" onClick="formCal.ans.value = '' " >
+		
+	
+	</form>
+</div>
+</body>
+	
+	
+</html>
